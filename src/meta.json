@@ -35,18 +35,19 @@
                         ],
                         "ios": [
                             {
-                                "name": "NSCameraUsageDescription",
-                                "label": "Camera",
-                                "hint": "Describe why your app uses the camera."
-                            },
-                            {
                                 "name": "NSPhotoLibraryUsageDescription",
                                 "label": "Photos",
                                 "hint": "Describe why your app uses photos."
+                            },
+                            {
+                                "name": "NSCameraUsageDescription",
+                                "label": "Camera",
+                                "hint": "Describe why your app uses the camera."
                             }
                         ]
                     },
                     "enabledFeatures": {
+                        "location": true,
                         "iap": false
                     }
                 },
@@ -125,7 +126,7 @@
                     "ios": {
                         "usageDescriptions": {
                             "NSCameraUsageDescription": "",
-                            "NSMicrophoneUsageDescription": ""
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -174,7 +175,7 @@
                     "ios": {
                         "usageDescriptions": {
                             "NSCameraUsageDescription": "",
-                            "NSMicrophoneUsageDescription": ""
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -199,10 +200,16 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "0",
+            "totalCopy": "1",
             "totalStar": "0",
             "starAction": "star",
-            "variables": {},
+            "variables": {
+                "eda373d2-e77f-47f0-8199-2c28a564ce6c": {
+                    "scope": "APP",
+                    "name": "speech",
+                    "screenId": "ccd8f04b-2643-44e6-86ac-58bd027a9f48"
+                }
+            },
             "defaultDesignerDevice": "PHONE",
             "defaultDesignerOrientation": "PORTRAIT",
             "schemaVersion": 2,
